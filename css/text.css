@@ -1,0 +1,83 @@
+@font-face {
+	font-family: kaine;
+	src: url('../fonts/kaine_block.otf');
+}
+
+
+@font-face {
+	font-family: Bext;
+	src: url('../fonts/Bext.ttf');
+}
+
+@font-face {
+	font-family:Lobster;
+	src: url('../fonts/Lobster.otf');
+}
+
+@font-face {
+    font-family:Adelle;
+    src: url('../fonts/AdelleBasic_Bold.otf');
+}
+
+
+@font-face {
+    font-family:Chunkfive;
+    src: url('../fonts/Chunkfive.otf');
+}
+
+
+@font-face {
+    font-family:akaDora;
+    src: url('../fonts/akaDora.ttf');
+}
+
+
+@font-face {
+    font-family:Junction;
+    src: url('../fonts/Junction.otf');
+}
+
+
+@font-face {
+    font-family:acid;
+    src: url('../fonts/acid.otf');
+}
+
+@font-face {
+    font-family:CodeBold;
+    src: url('../fonts/CODEBold.otf');
+}
+
+
+@font-face {
+    font-family:coolvetica;
+    src: url('../fonts/coolvetica.ttf');
+}
+
+
+
+@font-face {
+    font-family:QuicksandBold;
+    src: url('../fonts/Quicksand_Bold.otf');
+}
+
+
+@font-face {
+    font-family:CrimsonTextBold;
+    src: url('../fonts/CrimsonText-Bold.otf');
+}
+
+@font-face {
+    font-family:Dekar;
+    src: url('../fonts/Dekar.otf');
+}
+
+@font-face {
+    font-family:FranchiseBold;
+    src: url('../fonts/Franchise-Bold.ttf');
+}
+
+
+
+
+body{font:13px/1.5 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif}a:focus{outline:1px dotted}hr{border:0 #ccc solid;border-top-width:1px;clear:both;height:0}h1{font-size:25px}h2{font-size:23px}h3{font-size:21px}h4{font-size:19px}h5{font-size:17px}h6{font-size:15px}ol{list-style:decimal}ul{list-style:disc}li{margin-left:30px}p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:20px}
