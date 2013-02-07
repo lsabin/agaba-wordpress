@@ -4,10 +4,15 @@
   *@desc A single blog post See page.php is for a page layout.
   */
 
-  get_header('nueva');
+  get_header('agaba');
 
   if (have_posts()) : while (have_posts()) : the_post();
   ?>
+
+
+<div class="row">
+    <div class="span12">
+
 
     <div id="post-<?php the_ID(); ?>"  <?php post_class('postWrapper'); ?>>
 
@@ -42,6 +47,9 @@
   endwhile; else: ?>
 
 		<p>Sorry, no posts matched your criteria.</p>
+
+
+</div></div> <!-- fin de row -->
 
 <?php
   endif;

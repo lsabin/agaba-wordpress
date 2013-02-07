@@ -1,0 +1,38 @@
+@font-face {font-family: 'Carisma-Light';src: url('Fonts/245754_0_0.eot');src: url('Fonts/245754_0_0.eot?#iefix') format('embedded-opentype'),url('Fonts/245754_0_0.woff') format('woff'),url('Fonts/245754_0_0.ttf') format('truetype');}
+
+body {
+	background: #000;
+	color: #fff;
+}
+
+.menu {
+	font-family: 'Carisma-Light';
+	margin-top:100px;
+	font-size:18px;
+	font-weight: bold;
+	/*float: right;*/
+}
+
+
+
+#header {
+	border-bottom:2px solid #222;
+	height:150px;
+}
+
+.scroller {
+	height:460px;
+	width:100%;
+	background: url(../img/barra.jpg) no-repeat ;
+}
+
+.seccion {
+	border-top: 1px solid #222;
+	margin-top:10px;
+}
+
+.seccion h2 {
+	font-family: 'Carisma-Light';
+	font-size:18px;	
+}
+
