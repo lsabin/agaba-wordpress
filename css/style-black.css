@@ -1,8 +1,8 @@
 @font-face {font-family: 'Carisma-Light';src: url('Fonts/245754_0_0.eot');src: url('Fonts/245754_0_0.eot?#iefix') format('embedded-opentype'),url('Fonts/245754_0_0.woff') format('woff'),url('Fonts/245754_0_0.ttf') format('truetype');}
 
 body {
-	background: #000;
-	color: #fff;
+	background: #7f7969;
+	color: #e8e8e8;
 }
 
 .menu {
@@ -18,6 +18,7 @@ body {
 #header {
 	border-bottom:2px solid #222;
 	height:150px;
+	background-color: #000;
 }
 
 .scroller {
@@ -35,4 +36,23 @@ body {
 	font-family: 'Carisma-Light';
 	font-size:18px;	
 }
+
+
+h1 {
+		font-family: 'Carisma-Light';
+		font-size:42px;
+		/*background: #990100;*/
+}
+
+#footer {
+	border-top:2px solid #222;
+	height:150px;
+	background-color: #333;
+}
+
+
+
+
+
+
 
