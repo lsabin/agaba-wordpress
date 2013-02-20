@@ -1,7 +1,7 @@
 <?php
 
    get_header('nueva');
-   $my_query = new WP_Query('post_type=receta_coctel');
+   $my_query = new WP_Query('post_type=coctel');
 
 ?>	
 	

@@ -6,6 +6,9 @@
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?> <?php if ( !wp_title('', true, 'left') ); { ?> | <?php bloginfo('description'); ?> <?php } ?></title>
     
+
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic|Lobster+Two:400italic,700italic' 
+      rel='stylesheet' type='text/css'>    
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/style-black.css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/ddmenu.css" />
@@ -19,9 +22,11 @@
 
 
 
-<div class="container">
-  <div id="header" class="clearfix">
 
+
+
+  <div id="header" class="clearfix">
+    <div class="container">
     <div class="row">
         <div class="span12 navbar">
 
@@ -47,5 +52,8 @@
       </div>
 
     </div>
+    </div>
 
   </div> <!-- fin header -->
+
+  <div class="container">
