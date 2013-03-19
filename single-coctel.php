@@ -10,13 +10,6 @@
   ?>
 
 
-
-
-<!--
-<?php echo get('elaboracion'); ?>
-<?php echo get_image('imagen'); ?>
--->
-
 <div class="row">
     <div class="span12">
 
@@ -36,7 +29,6 @@
               <div class="span6">
                     <div class="foto">
                     <img src="<?php echo get('imagen'); ?>" />
-                        <!--<img src="http://www.agaba.net/AGABA%20P%C3%81GINA%20WEB/recetario/cockteleriaclasica/americano.jpg"/>-->
                     </div>
               </div>
 
@@ -45,12 +37,22 @@
                   <div class="row"><div class="span4 linea"><strong>Tipo:</strong> <?php echo get('tipo'); ?></div></div>
                   <div class="row"><div class="span4 linea"><strong>Preparación:</strong> <?php echo get('preparacion'); ?></div></div>
                   <div class="row"><div class="span4 linea"><strong>Presentación: </strong><?php echo get('presentacion'); ?></div></div>
+
+                  <?php if (get('autor')) { ?>
+                    <div class="row"><div class="span4 linea"><strong>Autor: </strong> <?php echo get('autor'); ?></div></div>
+                  <?php } ?> 
+
+
+                  <?php if (get('premios')) { ?>
+                    <div class="row"><div class="span4 linea"><strong>Premios: </strong> <?php echo get('premios'); ?></div></div>
+                  <?php } ?>
+
                   <div class="row"><div class="span4"></div></div>
 
                   <div class="row social-buttons" style="margin-top:20px;">
                     <div class="span4">
-                          <img src="<?php bloginfo('template_url'); ?>/images/TwitterIconWhite48x48.png" style="background-color:#333;border:0"/>
-                          <img src="<?php bloginfo('template_url'); ?>/images/FacebookIconWhite48x48.png" style="background-color:#333;border:0"/>
+                          <img src="<?php bloginfo('template_url'); ?>/images/twitter.png" style="background-color:tranparent;border:0"/>
+                          <img src="<?php bloginfo('template_url'); ?>/images/facebook.png" style="background-color:transparent;border:0"/>
                     </div>
                   </div>
 
@@ -99,6 +101,11 @@
 
     </div> <!-- fin post-id -->
 
+
+</div> <!-- fin span12 -->
+
+</div> <!-- fin de row -->    
+
 	<?php
 
   endwhile; else: ?>
@@ -106,9 +113,7 @@
 		<p>Sorry, no posts matched your criteria.</p>
 
 
-</div> <!-- fin span12 -->
 
-</div> <!-- fin de row -->
 
 
 <!-- nueva plantilla -->
@@ -123,6 +128,6 @@
 <?php
   endif;
 
-  get_footer('nuevo');
+  get_footer();
 
 ?>

@@ -7,8 +7,8 @@ body {
 
 .menu {
 	font-family: 'Carisma-Light';
-	margin-top:100px;
-	font-size:18px;
+	margin-top:90px;
+	font-size:16px;
 	font-weight: bold;
 	/*float: right;*/
 }
@@ -48,6 +48,7 @@ h1 {
 	border-top:2px solid #222;
 	height:150px;
 	background-color: #333;
+  margin-top:50px;
 }
 
 
@@ -157,6 +158,23 @@ h1 {
   -moz-box-shadow: 10px 10px 5px #888;
 -webkit-box-shadow: 10px 10px 5px #888;
 box-shadow: 5px 5px 2px #333;
+}
+
+.crop { width: 210px; height: 150px; overflow: hidden; }
+.crop img { width: 200px; height: 150px; margin: 10px 0 10px 10px; }
+
+.caja-coctel-aleatorio {
+  margin: 0;
+
+}
+
+.tag-cloud {
+
+  margin: 0;
+  margin-top:20px;
+  background: #F6F6F6;
+  padding-top:5px;
+  padding-bottom: 5px;
 }
 
 

@@ -2,11 +2,8 @@
 
     get_header('agaba');
 
-    $args = array_merge( $wp_query->query_vars, array( 'post_type' => 'coctel' ) );
-    $my_query = new WP_Query($args);
- 
-
-?>	
+	
+if (have_posts()): ?>
 	
 
 <div class="row">
@@ -17,11 +14,8 @@
 
 <?php 
 
-while ($my_query->have_posts()) : $my_query->the_post(); ?>
+while (have_posts()) : the_post(); ?>
 
-<?php
-$image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quality 90
-?>
 
 <a href="<?php the_permalink() ?>" rel="bookmark">
         <div class="span3 caja">
@@ -32,9 +26,19 @@ $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quali
 
 
 <?php endwhile; ?>
+ 
 
 
-</div></div></div>
+      </div>
+    </div>
+</div>
+
+
+
+<?php else: ?>
+
+  <p><?php _e('Lo siento, no hay resultados.'); ?></p>
+<?php endif; ?>
 
 
 <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
@@ -57,6 +61,15 @@ $args = array( "title" => "Etiquetas de cócteles" , 'post_type' => 'coctel',
 do_utcw( $args );
 ?>
 
-<?php
-  get_footer();
+
+<div class="pagination-older"><?php next_posts_link('Older Entries'); ?></div>
+<div class=" pagination-newer"><?php previous_posts_link('Newer Entries'); ?></div> 
+
+
+    
+
+
+
+  <?php
+  get_footer('nuevo');
 ?>

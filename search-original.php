@@ -7,7 +7,7 @@
 	
  
 
-<div class="grid_12">	
+<div class="grid_12">	resultaado de busqueda
   <ol id="posts">
   <?php while (have_posts()) : the_post(); ?>
 

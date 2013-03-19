@@ -2,7 +2,8 @@
 
     get_header('agaba');
 
-    $args = array_merge( $wp_query->query_vars, array( 'post_type' => 'coctel' ) );
+    $args = array_merge( $wp_query->query_vars, 
+      array( 'post_type' => 'coctel', 'orderby' => 'name', 'order' => 'ASC' ) );
     $my_query = new WP_Query($args);
  
 
@@ -37,6 +38,9 @@ $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quali
 </div></div></div>
 
 
+<!--<?php get_search_form( 'true' ); ?>-->
+
+
 <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
     <div><label class="screen-reader-text" for="s">Busca por:</label>
         <input type="text" value="" name="s" id="s" />
@@ -56,6 +60,7 @@ $args = array( "title" => "Etiquetas de cócteles" , 'post_type' => 'coctel',
 
 do_utcw( $args );
 ?>
+
 
 <?php
   get_footer();

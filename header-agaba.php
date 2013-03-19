@@ -11,9 +11,9 @@
       rel='stylesheet' type='text/css'>    
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/style-black.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/ddmenu.css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/js-image-slider.css" />
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/ddmenu.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/superfish.css" />
+
     <script src="<?php bloginfo( 'template_url' ); ?>/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="<?php bloginfo( 'template_url' ); ?>/js/js-image-slider.js" type="text/javascript"></script>
 
@@ -31,16 +31,24 @@
         <div class="span12 navbar">
 
           <div class="row">
-              <div class="span3"><img src="<?php bloginfo('template_url'); ?>/images/logoagaba-black.jpg"/></div>
-              <div id="ddmenu" class="span6 menu">
-                <ul class="nav" style="float:right;">
+              <div class="span3">
+                  <a href="<?php echo home_url( '/' ); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logoagaba-black.jpg"/></a>
+              </div>
+              <div id="ddmenu" class="span9 menu">
+                <ul class="sf-menu" id="menu-nav">
                     <li class=""><a href="/">AGABA</a>
-                          <div class="column">
-                            <a href="">Quienes somos</a>
-                            <a href="">Como asociarse</a>
-                          </div>
+                          <ul>
+                            <li><a href="">Quienes somos</a></li>
+                            <li><a href="">Como asociarse</a></li>
+                          </ul>
                     </li>
-                    <li class=""><a href="#">COCTELES</a></li>
+
+                    <li class=""><a href="">COCTELES</a>
+                      <ul>
+                        <li><a href="<?php echo home_url( '/' ); ?>category/coctel">Recetas tradicionales</a></li>
+                        <li><a href="<?php echo home_url( '/' ); ?>category/orujo">Recetas con orujo</a></li>
+                      </ul>
+
                     <li class=""><a href="#">NOTICIAS</a></li>
                     <li class=""><a href="#">CURSOS</a></li>
                     <li class=""><a href="#">CONTACTO</a></li>
