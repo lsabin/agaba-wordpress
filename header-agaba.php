@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/js-image-slider.css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/superfish.css" />
 
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="<?php bloginfo( 'template_url' ); ?>/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="<?php bloginfo( 'template_url' ); ?>/js/js-image-slider.js" type="text/javascript"></script>
 
