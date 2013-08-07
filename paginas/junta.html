@@ -1,0 +1,185 @@
+<style>
+
+.texto-foto {
+    z-index:1;
+    color:#fff;
+    position:relative;
+    top:60%;
+    background:#26bd9e;
+    font-style:normal;
+    padding-bottom:20px;
+    font-family: 'Carisma-Light';
+    margin:0 auto;
+}
+
+
+.oculto {
+    opacity:0;
+}
+
+.foto-redonda {
+   width:200px;
+   height:200px;
+   overflow:hidden;
+   border-radius:200px;
+   border:10px solid #7f7969;
+   display:block;
+   backrground-size: 100% auto; 
+   margin: 0 auto;
+   text-align: center;
+    
+}
+
+
+.foto-1 {
+   background: url(../imagenes/directiva/juanjofdez.jpg) no-repeat center 0px;
+}
+
+.foto-2 {
+   background: url(../imagenes/directiva/diegomos.jpg) no-repeat center 0px;
+}
+
+.foto-3 {
+   background: url(../imagenes/directiva/diegofer.jpg) no-repeat center 0px;
+}
+
+.foto-4 {
+   background: url(../imagenes/directiva//PabloAldemira.jpg) no-repeat center 0px;
+}
+
+.circulo-foto {
+   display: block;
+}
+
+.cargo {
+  color: #222;
+}
+
+</style>
+</style>
+
+
+<div class="row">
+  <div class="span12">
+
+
+
+    <div class="row caja">
+        <div class="span12 seccion-foto" style="margin-bottom:40px;">
+          <div class="row ">
+            <div class="span12"><h1>Junta directiva</h1></div>  
+          </div>
+          
+         <div class="row" style="margin-top:20px;">
+
+            <div class="span12">
+                <div class="foto-redonda foto-1">
+                    <div class="texto-foto oculto">
+                        <div style="font-weight:bold;">JUANJO FERNANDEZ</div>
+                        <div>MORALES</div>
+                        <div class="cargo">PRESIDENTE</div>
+                    </div>
+                </div>
+            </div>
+           
+         </div>            
+  
+         <div class="row" style="margin-top:20px;">
+
+            <div class="span4">
+                <div class="foto-redonda foto-2">
+                    <div class="texto-foto oculto">
+                        <div>DIEGO MOSQUERA</div>
+                        <div>MIRAMONTES</div>
+                        <div class="cargo">VICEPRESIDENTE</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="span4">
+                <div class="foto-redonda foto-3">
+                    <div class="texto-foto oculto">
+                        <div>DIEGO FERNANDEZ</div>
+                        <div>PEREZ</div>
+                        <div class="cargo">SECRETARIO GENERAL</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="span4">
+                <div class="foto-redonda foto-4">
+                    <div class="texto-foto oculto">
+                        <div>PABLO ALDEMIRA</div>
+                        <div>LIZ</div>
+                        <div class="cargo">TESORERO</div>
+                    </div>
+                </div>
+            </div>
+
+            
+         </div>  
+
+
+         <div class="row" style="margin-top:20px;">
+
+            <div class="span4">
+                <div class="foto-redonda foto-2">
+                    <div class="texto-foto oculto">
+                        <div>DIEGO MOSQUERA</div>
+                        <div>MIRAMONTES</div>
+                        <div class="cargo">VICEPRESIDENTE</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="span4">
+                <div class="foto-redonda foto-3">
+                    <div class="texto-foto oculto">
+                        <div>DIEGO FERNANDEZ</div>
+                        <div>PEREZ</div>
+                        <div class="cargo">SECRETARIO GENERAL</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="span4">
+                <div class="foto-redonda foto-4">
+                    <div class="texto-foto oculto">
+                        <div>PABLO ALDEMIRA</div>
+                        <div>LIZ</div>
+                        <div class="cargo">TESORERO</div>
+                    </div>
+                </div>
+            </div>
+
+            
+         </div>  
+                  
+
+    </div>
+  </div>
+
+
+</div></div>
+
+
+<script>
+
+jQuery(function(){
+        jQuery('.foto-redonda').hover(function(){
+                jQuery(this).stop().animate({opacity:1},200);
+                jQuery('.texto-foto', this).removeClass('oculto');
+                jQuery('.texto-foto', this).css('opacity',1);
+
+                
+        },function(){
+                jQuery(this).stop().animate({opacity:1},500);
+                jQuery('.texto-foto', this).addClass('oculto');
+                jQuery('.texto-foto', this).css('opacity',0);
+        });
+});
+
+
+</script>

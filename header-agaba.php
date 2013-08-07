@@ -42,6 +42,7 @@
                           <ul>
                             <li><a href="">Quienes somos</a></li>
                             <li><a href="">Como asociarse</a></li>
+                            <li><a href="<?php echo home_url( '/' ); ?>junta-directiva">Junta directiva</a></li>
                           </ul>
                     </li>
 
