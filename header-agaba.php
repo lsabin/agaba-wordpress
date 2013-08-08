@@ -40,7 +40,7 @@
                 <ul class="sf-menu" id="menu-nav">
                     <li class=""><a href="/">AGABA</a>
                           <ul>
-                            <li><a href="">Quienes somos</a></li>
+                            <li><a href="<?php echo home_url( '/' ); ?>quienes-somos">Quienes somos</a></li>
                             <li><a href="">Como asociarse</a></li>
                             <li><a href="<?php echo home_url( '/' ); ?>junta-directiva">Junta directiva</a></li>
                           </ul>
