@@ -34,7 +34,7 @@
 
           <div class="row">
               <div class="span3">
-                  <a href="<?php echo home_url( '/' ); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logoagaba-black.jpg"/></a>
+                  <a href="<?php echo home_url( '/' ); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png"/></a>
               </div>
               <div id="ddmenu" class="span9 menu">
                 <ul class="sf-menu" id="menu-nav">
@@ -54,7 +54,7 @@
 
                     <li class=""><a href="#">NOTICIAS</a></li>
                     <li class=""><a href="#">CURSOS</a></li>
-                    <li class=""><a href="#">CONTACTO</a></li>
+                    <li class=""><a href="<?php echo home_url( '/' ); ?>contacto">CONTACTO</a></li>
                 </ul>
             </div>
           </div>
