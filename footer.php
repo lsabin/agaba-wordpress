@@ -65,6 +65,57 @@
 		});
 	</script>
 
+
+<script>
+
+jQuery(function(){
+
+
+  jQuery('#pinterest').sharrre({
+      share: { pinterest: true },
+      url: 'http://www.paulund.co.uk',
+      enableHover: false,
+      enableCounter: true, 
+      enableTracking: true,
+        template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><span></span>Pinterest</div></a>',
+      click: function(api, options){
+      api.simulateClick();
+      api.openPopup('pinterest');
+    }
+    });
+
+jQuery('#twitter').sharrre({
+      share: { twitter: true },
+      url: 'http://www.paulund.co.uk',
+      enableHover: false,
+
+      enableCounter: true, 
+      enableTracking: true,
+      template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><span></span>Tweet</div></a>',
+      buttons: { twitter: {via: 'paulund_'}},
+      click: function(api, options){
+      api.simulateClick();
+      api.openPopup('twitter');
+    }
+    });
+
+    jQuery('#facebook').sharrre({
+      share: { facebook: true },
+      url: 'http://www.paulund.co.uk',
+      enableHover: false,
+      enableTracking: true,
+      template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><span></span>Like</div></a>',
+      click: function(api, options){
+      api.simulateClick();
+      api.openPopup('facebook');
+    }
+    });
+
+
+});
+</script>
+
+
       
 
   </body>

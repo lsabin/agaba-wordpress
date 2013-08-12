@@ -10,6 +10,60 @@
   ?>
 
 
+<!-- TODO: Borrar despues de pruebas -->
+<style>
+/*Share*/
+#twitter.sharrre,
+#facebook.sharrre,
+#google.sharrre, 
+#pinterest.sharrre
+{
+  float: left;
+  margin:0 10px;
+  text-align: center;
+}
+
+#twitter.sharrre a,
+#facebook.sharrre a,
+#google.sharrre a, 
+#pinterest.sharrre a
+{
+  text-decoration: none;
+  color:#555;
+}
+
+#twitter.sharrre .count,
+#facebook.sharrre .count,
+#google.sharrre .count, 
+#pinterest.sharrre .count
+{
+  background:#3274d7;
+  padding:10px;
+  color:#eee;
+  min-width: 60px;
+}
+
+#twitter.sharrre .share,
+#facebook.sharrre .share,
+#google.sharrre .share, 
+#pinterest.sharrre .share
+{
+  border:1px solid #555;
+  padding:5px;
+}
+
+#twitter.sharrre .share:active,
+#facebook.sharrre .share:active,
+#google.sharrre .share:active,
+#pinterest.sharrre .share:active
+{
+  box-shadow:inset 0 5px 5px rgba(0,0,0,.5); 
+}
+
+
+</style>
+
+
 <div class="row">
     <div class="span12">
 
@@ -49,12 +103,25 @@
 
                   <div class="row"><div class="span4"></div></div>
 
+<!--
                   <div class="row social-buttons" style="margin-top:20px;">
                     <div class="span4">
                           <img src="<?php bloginfo('template_url'); ?>/images/twitter.png" style="background-color:tranparent;border:0"/>
                           <img src="<?php bloginfo('template_url'); ?>/images/facebook.png" style="background-color:transparent;border:0"/>
                     </div>
                   </div>
+-->                  
+
+                  <div class="row social-buttons" style="margin-top:20px;">
+                    <div class="span4">
+
+                      <div id="pinterest" data-text="AGABA - Receta <?php the_title(); ?>" data-url="<?php the_permalink() ?>" data-image="<?php echo get('imagen'); ?>"  data-title="Pinterest"></div>
+                      <div id="twitter" data-url="<?php the_permalink() ?>" data-title="Share on Twitter"></div>
+                      <div id="facebook" data-url="<?php the_permalink() ?>" data-title="Share on Facebook"></div>
+
+
+                    </div>
+                  </div>                  
 
 
                   <div class="row" style="margin-top:20px;">
@@ -122,6 +189,8 @@
 
 
 <!-- fin nueva plantilla -->
+
+
 
 
 
