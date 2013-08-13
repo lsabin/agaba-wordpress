@@ -62,22 +62,14 @@
 
 		    jQuery('.contooltip').tooltip({placement:'bottom'});
 
-		});
-	</script>
-
-
-<script>
-
-jQuery(function(){
 
 
   jQuery('#pinterest').sharrre({
       share: { pinterest: true },
-      url: 'http://www.paulund.co.uk',
       enableHover: false,
       enableCounter: true, 
       enableTracking: true,
-        template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><span></span>Pinterest</div></a>',
+        template: "<a class='box' href='#''><div class='share'><span></span><img src='../../imagenes/pinterest-black.png' /></div><div class='count' href='#''>{total}</div></a>",
       click: function(api, options){
       api.simulateClick();
       api.openPopup('pinterest');
@@ -86,13 +78,11 @@ jQuery(function(){
 
 jQuery('#twitter').sharrre({
       share: { twitter: true },
-      url: 'http://www.paulund.co.uk',
       enableHover: false,
-
       enableCounter: true, 
       enableTracking: true,
-      template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><span></span>Tweet</div></a>',
-      buttons: { twitter: {via: 'paulund_'}},
+      template: '<a class="box" href="#"><div class="share"><span></span><img src="../../imagenes/twitter-pajarito.png" /></div><div class="count" href="#">{total}</div></a>',
+      //buttons: { twitter: {via: 'paulund_'}},
       click: function(api, options){
       api.simulateClick();
       api.openPopup('twitter');
@@ -101,10 +91,9 @@ jQuery('#twitter').sharrre({
 
     jQuery('#facebook').sharrre({
       share: { facebook: true },
-      url: 'http://www.paulund.co.uk',
       enableHover: false,
       enableTracking: true,
-      template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><span></span>Like</div></a>',
+      template: '<a class="box" href="#"><div class="share"><span></span><img src="../../imagenes/facebook-black.png" /></div><div class="count" href="#">{total}</div></a>',
       click: function(api, options){
       api.simulateClick();
       api.openPopup('facebook');
@@ -112,8 +101,10 @@ jQuery('#twitter').sharrre({
     });
 
 
-});
-</script>
+		});
+	</script>
+
+
 
 
       
