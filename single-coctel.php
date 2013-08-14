@@ -21,9 +21,9 @@
 
     <div class="row caja">
         <div class="span12 seccion-foto">
-          <div class="row ">
-            <div class="span6"><h1><?php the_title(); ?></h1></div>  
-            <div class="span4">&nbsp;</div>
+          <div class="row titular">
+            <div class="span12"><h1><?php the_title(); ?></h1></div>  
+            <!--<div class="span4">&nbsp;</div>-->
           </div>
 
           <div class="row">
