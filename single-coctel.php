@@ -93,10 +93,10 @@
 
             <div class="span6 elaboracion">
 
+              <?php if (get('elaboracion')) { ?>
               <div class="row"><div class="span6 "><h3>Elaboración</h3></div></div>
-              <div class="row"><div class="span5 ">
-                  <?php echo get('elaboracion'); ?>
-              </div></div>
+              <div class="row"><div class="span5 "><?php echo get('elaboracion'); ?></div></div>
+              <?php } ?> 
 
             </div>
 
