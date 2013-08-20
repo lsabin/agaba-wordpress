@@ -281,4 +281,70 @@ h1 {
 
 
 
+.contenthover { padding:20px 20px 10px 20px; }
+.contenthover, .contenthover h3, contenthover a { color:#fff; }
+.contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
+.contenthover a.mybutton { 
+    display:block; float:left; padding:35px 10px; background:#26bd9e; color:#fff; 
+    margin-left: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+  /*  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;  */}
+.contenthover a.mybutton:hover { background:#26bd9e }
+
+
+.caja-campeonato {
+  width: 150px;
+  height: 150px;
+  background: #26bd9e; /*verde brillante */
+  background: #162a34; /* azul */
+  
+  background: #534522; /* dorado */
+  background: #241838; /* lila */
+  background: #4e4956;
+  background: #1b421b; /* verde oscuro */
+  background: #532222; /* morado */
+  background: #3c9632;
+
+/*  border:3px solid #7f7969;*/
+font-size: 20px;
+
+}
+
+
+
+.fila-campeonato {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-top:20px;
+  padding-bottom: 40px;
+  font-family: 'Carisma-Light';
+font-style: normal;
+font-size: 18px;
+
+}
+
+.campeonato {
+  /*margin-left: 30px;*/
+}
+
+
+.fecha-campeonato {
+  color: #FFF;
+  padding-top: 30px;
+}
+
+
+.nombre-campeonato {
+  color: #7F7969;
+  color: #fff;
+  font-weight: bold;
+  margin: 0px auto;
+  padding-top: 30px;
+
+}
+
+
+
+
 

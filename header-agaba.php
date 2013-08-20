@@ -19,6 +19,7 @@
     <script src="<?php bloginfo( 'template_url' ); ?>/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="<?php bloginfo( 'template_url' ); ?>/js/js-image-slider.js" type="text/javascript"></script>
     <script src="<?php bloginfo( 'template_url' ); ?>/js/jquery.sharrre-1.3.4.js" type="text/javascript"></script>
+    <script src="<?php bloginfo( 'template_url' ); ?>/js/jquery.contenthover.js" type="text/javascript"></script>
 
 </head>
 <body>
