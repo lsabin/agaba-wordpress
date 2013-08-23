@@ -15,11 +15,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/superfish.css" />
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/js-image-slider.js" type="text/javascript"></script>
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/jquery.sharrre-1.3.4.js" type="text/javascript"></script>
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/jquery.contenthover.js" type="text/javascript"></script>
+<!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 
 </head>
 <body>
@@ -43,7 +39,7 @@
                     <li class=""><a href="/">AGABA</a>
                           <ul>
                             <li><a href="<?php echo home_url( '/' ); ?>quienes-somos">Quienes somos</a></li>
-                            <li><a href="">Como asociarse</a></li>
+                            <li><a href="<?php echo home_url( '/' ); ?>como-asociarse">Como asociarse</a></li>
                             <li><a href="<?php echo home_url( '/' ); ?>junta-directiva">Junta directiva</a></li>
                           </ul>
                     </li>

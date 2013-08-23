@@ -143,6 +143,9 @@
 <?php
   endif;
 
+add_script_social();
+add_script_sharre();
+
   get_footer();
 
 ?>

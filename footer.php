@@ -41,73 +41,17 @@
 
 		</div>
 
+     <?php 
+          add_script_supersubs();
+          add_script_menu(); 
+          add_script_bootstrap(); 
 
+           
+     ?>
 
         <?php wp_footer(); ?>
       </div>
 
-
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/hoverIntent.js" type="text/javascript"></script>
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/superfish.js" type="text/javascript"></script>
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/supersubs.js" type="text/javascript"></script>
-
-	<script>
-		jQuery(function() {
-		    jQuery("#menu-nav").supersubs({
-		        minWidth:    12,   // minimum width of sub-menus in em units
-		        maxWidth:    27,   // maximum width of sub-menus in em units
-		        extraWidth:  1   
-		    }).superfish();
-
-
-		    jQuery('.contooltip').tooltip({placement:'bottom'});
-
-
-
-  jQuery('#pinterest').sharrre({
-      share: { pinterest: true },
-      enableHover: false,
-      enableCounter: true, 
-      enableTracking: true,
-        template: "<a class='box' href='#''><div class='share'><span></span><img src='../../imagenes/pinterest-black.png' /></div><div class='count' href='#''>{total}</div></a>",
-      click: function(api, options){
-      api.simulateClick();
-      api.openPopup('pinterest');
-    }
-    });
-
-jQuery('#twitter').sharrre({
-      share: { twitter: true },
-      enableHover: false,
-      enableCounter: true, 
-      enableTracking: true,
-      template: '<a class="box" href="#"><div class="share"><span></span><img src="../../imagenes/twitter-pajarito.png" /></div><div class="count" href="#">{total}</div></a>',
-      //buttons: { twitter: {via: 'paulund_'}},
-      click: function(api, options){
-      api.simulateClick();
-      api.openPopup('twitter');
-    }
-    });
-
-    jQuery('#facebook').sharrre({
-      share: { facebook: true },
-      enableHover: false,
-      enableTracking: true,
-      template: '<a class="box" href="#"><div class="share"><span></span><img src="../../imagenes/facebook-black.png" /></div><div class="count" href="#">{total}</div></a>',
-      click: function(api, options){
-      api.simulateClick();
-      api.openPopup('facebook');
-    }
-    });
-
-
-		});
-	</script>
-
-
-
-
-      
 
   </body>
 </html>

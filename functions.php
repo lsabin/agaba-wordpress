@@ -13,7 +13,7 @@
  * is designed for, generally via the style.css stylesheet.
  */
 if ( ! isset( $content_width ) )
-	$content_width  = '670';
+  $content_width  = '670';
 
 
 /**
@@ -26,7 +26,7 @@ register_nav_menu('main', 'Main Nav');
 
 
 /**
-* Add custom background	
+* Add custom background 
 **/
 
 add_custom_background(); 
@@ -89,7 +89,7 @@ function will_paginate()
 * Borra los p en el contenido 
 */
 function remove_wpautop_content_filter() {
-	remove_filter('the_content','wpautop');
+  remove_filter('the_content','wpautop');
 }
 
 
@@ -99,5 +99,104 @@ function remove_wpautop_content_filter() {
 require_once ( get_template_directory() . '/inc/theme-options.php' );
 
 
+function add_script_sharre() {
+    wp_enqueue_script(
+      'sharre', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/jquery.sharrre-1.3.4.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
+
+
+function add_script_social() {
+    wp_enqueue_script(
+      'social', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/inserta-social.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
+function add_script_menu() {
+    wp_enqueue_script(
+      'menu', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/menu.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
+
+function add_script_supersubs() {
+    wp_enqueue_script(
+      'hoverIntent', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/hoverIntent.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+
+
+    wp_enqueue_script(
+      'superfish', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/superfish.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+
+
+    wp_enqueue_script(
+      'supersubs', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/supersubs.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+
+}
+
+
+function add_script_bootstrap() {
+    wp_enqueue_script(
+      'bootstrap', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/bootstrap.min.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
+
+function add_script_imageslider() {
+    wp_enqueue_script(
+      'image-slider', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/js-image-slider.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
+function add_script_contenthover() {
+    wp_enqueue_script(
+      'contenthover', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/jquery.contenthover.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
+
+function add_script_contenthover_campeonatos() {
+    wp_enqueue_script(
+      'contenthover-campeonatos', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/contenthover-campeonatos.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
+
+
+function add_script_junta() {
+    wp_enqueue_script(
+      'junta', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/junta.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
+/*add_action( 'wp_enqueue_scripts', 'add_script_sharre' );
+add_action( 'wp_enqueue_scripts', 'add_script_menu' );
+add_action( 'wp_enqueue_scripts', 'add_script_social' );
+*/
 
 ?>

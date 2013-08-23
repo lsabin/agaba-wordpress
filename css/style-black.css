@@ -344,6 +344,98 @@ font-size: 18px;
 
 }
 
+/** inscripciones **/
+.seccion-caja {
+     font-family: 'Carisma-Light';
+   font-style: normal;
+     text-align: left;
+     font-size: 20px;
+     padding-left: 20px;
+     margin-top: 40px;
+
+}
+
+.inscripcion-caja {
+   background: #bfb8a6;
+   font-family: 'Carisma-Light';
+   font-style: normal;
+     text-align: left;
+     color: #333;
+     font-size: 24px;
+     margin-left: 60px;
+     margin-top: 20px;
+
+
+}
+
+.inscripcion-cuota {
+  text-align: right;
+  padding: 10px;
+  color: #fff;
+  background: #3F5A65;
+  font-weight: bold;
+
+
+}
+
+
+.inscripcion-estudiante, .inscripcion-profesional {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    color: #fff;
+  }
+
+.inscripcion-estudiante {
+   background: #26bd9e; /*verde brillante */
+}
+
+.inscripcion-profesional {
+    background: #534522;
+}
+
+
+.inscripcion-caja ul {
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.inscripcion-caja ul li {
+  padding-bottom: 20px;
+}
+
+.inscripcion-caja .spacer {
+  padding-bottom: 20px;
+}
+
+
+.boton-formulario {
+  text-align: center;
+}
+
+.boton-formulario a {
+  background: #3c9632;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.boton-formulario a:hover {
+    background: #1b421b;
+}
+
+
+.inscripcion-contacto{
+  color: #333;
+  width: 65%;
+  padding: 10px;
+  background: #bfb8a6;
+  margin: 0 auto;
+  line-height: 30px;
+  text-align: left;
+  font-size: 14px;
+
+}
 
 
 

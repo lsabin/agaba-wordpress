@@ -129,5 +129,9 @@ $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quali
 <?php
   endif;
 
+
+
+  add_script_imageslider();
+
   get_footer();
 ?>
