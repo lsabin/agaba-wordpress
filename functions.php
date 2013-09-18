@@ -194,6 +194,32 @@ function add_script_junta() {
   );
 }
 
+
+function add_script_gallery() {
+    wp_enqueue_script(
+      'ad-gallery', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/jquery.ad-gallery.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
+function add_script_fancybox() {
+    wp_enqueue_script(
+      'fancybox', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/jquery.fancybox.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
+
+function add_script_gallery_start() {
+    wp_enqueue_script(
+      'gallery-start', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/gallery-start.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
 /*add_action( 'wp_enqueue_scripts', 'add_script_sharre' );
 add_action( 'wp_enqueue_scripts', 'add_script_menu' );
 add_action( 'wp_enqueue_scripts', 'add_script_social' );

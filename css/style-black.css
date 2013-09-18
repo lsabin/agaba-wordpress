@@ -438,25 +438,28 @@ font-size: 18px;
 }
 
 
+/*
 .caja-curso {
   width: 100%;
   height: 150px;
-  background: #26bd9e; /*verde brillante */
-  background: #162a34; /* azul */
-  
-  background: #534522; /* dorado */
-  background: #241838; /* lila */
-  background: #4e4956;
-  background: #1b421b; /* verde oscuro */
-  background: #532222; /* morado */
   background: #3c9632;
+  font-size: 20px;
+}*/
 
-/*  border:3px solid #7f7969;*/
-font-size: 20px;
+.curso a {
+  width: 100%;
+  height: 150px;
+  text-decoration: none;
+  background: #3c9632;
+  display: block;
+  font-size: 20px;
 
 }
 
-
+.curso a:hover {
+  background: #532222; /* morado */
+  color: #000;
+}
 
 .fila-curso {
   margin-left: 12px;
@@ -465,12 +468,6 @@ font-size: 20px;
   font-family: 'Carisma-Light';
 font-style: normal;
 font-size: 18px;
-
-}
-
-.curso {
-  /*margin-left: 30px;*/
-
 
 }
 
