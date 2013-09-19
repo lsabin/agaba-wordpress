@@ -53,7 +53,7 @@
                       </ul>
 
                     <li class=""><a href="#">NOTICIAS</a></li>
-                    <li class=""><a href="#">CURSOS</a></li>
+                    <li class=""><a href="<?php echo home_url( '/' ); ?>cursos">CURSOS</a></li>
                     <li class=""><a href="<?php echo home_url( '/' ); ?>contacto">CONTACTO</a></li>
                 </ul>
             </div>
