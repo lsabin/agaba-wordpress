@@ -1,0 +1,168 @@
+<div class="caja">
+
+    <div class="row">
+        <div class="span12 titular"><h1>Socios protectores</h1></div>  
+    </div>
+
+
+    <div class="fila-socio">
+    <div class="row">
+
+
+        <div class="span3 socio"> 
+        <a href="http://www.bacardi.com"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/bacardi.jpg"></div>
+                <div class="nombre-socio">Bacardí</div>
+            </div>
+        </a>
+        </div>
+
+        <div class="span3 socio offset0"> 
+        <a href="http://www.martini.com"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/martini.jpg"></div>
+                <div class="nombre-socio">Martini</div>
+            </div>
+        </a>
+        </div>
+
+        <div class="span3 socio offset0"> 
+        <a href="http://www.mariebrizard.com/"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/marie-brizard-logo.png"></div>
+                <div class="nombre-socio">Marie Brizard</div>
+            </div>
+        </a>
+        </div>      
+
+        <div class="span3 socio offset0"> 
+        <a href="http://www.orujodegalicia.org/"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/augardentes.jpg"></div>
+                <div class="nombre-socio">Augardentes e licores de Galicia</div>
+            </div>
+        </a>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="fila-socio">
+    <div class="row">
+
+        <div class="span3 socio"> 
+        <a href="http://www.artesariasbaixas.com/"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/artesa.jpg"></div>
+                <div class="nombre-socio">Artesa Rías Baixas</div>
+            </div>
+        </a>
+        </div>
+
+        <div class="span3 socio offset0"> 
+        <a href="http://monin.com/"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/monin.jpg"></div>
+                <div class="nombre-socio">Monin</div>
+            </div>
+        </a>
+        </div>
+
+        <div class="span3 socio offset0"> 
+        <a href="http://www.finestcall.com/"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/finest-call.jpg"></div>
+                <div class="nombre-socio">Finest Call</div>
+            </div>
+        </a>
+        </div>      
+
+        <div class="span3 socio offset0"> 
+        <a href="http://www.schweppes.es/"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/schweppes.jpg"></div>
+                <div class="nombre-socio">Schweppes</div>
+            </div>
+        </a>
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="fila-socio">
+    <div class="row">
+
+        <div class="span3 socio"> 
+        <a href="http://www.parador.es/es/parador-de-santiago-de-compostela"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/parador.jpg"></div>
+                <div class="nombre-socio">Hostal dos Reis Católicos</div>
+            </div>
+        </a>
+        </div>
+
+        <div class="span3 socio offset0"> 
+        <a href="http://www.laguladelnorte.es/"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/gula.jpg"></div>
+                <div class="nombre-socio">La Gula del Norte</div>
+            </div>
+        </a>
+        </div>
+
+        <div class="span3 socio offset0"> 
+        <a href="https://www.facebook.com/VAOVA"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/vaova.jpg"></div>
+                <div class="nombre-socio">Vaová Gastro</div>
+            </div>
+        </a>
+        </div>      
+
+        <div class="span3 socio offset0"> 
+        <a href="http://www.gonzalezbyass.com/"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/gonzalezbyass.jpg"></div>
+                <div class="nombre-socio">González Byass</div>
+            </div>
+        </a>
+        </div>
+
+    </div>
+    </div>    
+
+
+    <div class="fila-socio">
+    <div class="row">
+
+        <div class="span3 socio"> 
+        <a href="http://www.nordesgin.com/"> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/nordes.jpg"></div>
+                <div class="nombre-socio">Nordés</div>
+            </div>
+        </a>
+        </div>
+
+        <div class="span3 socio offset0"> 
+        <a href=""> 
+            <div class="caja-socio">
+                <div class="imagen-socio"><img src="../imagenes/socios/requeixo.jpg"></div>
+                <div class="nombre-socio">Requesón e Mel de Galicia</div>
+            </div>
+        </a>
+        </div>
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+
+</div>
+</div> <!-- fin caja -->
