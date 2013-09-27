@@ -504,6 +504,56 @@ font-size: 18px;
 
 }
 
+.caja-socio {
+  height: 100%;
+}
+
+.socio a {
+  width: 100%;
+  height: 220px;
+  text-decoration: none;
+  /*background: #3c9632;*/
+  display: block;
+  font-size: 20px;
+
+}
+
+.socio a:hover {
+  /*background: #532222; /* morado */
+
+  color: #000;
+}
+
+.fila-socio {
+  margin-left: 12px;
+  margin-top: 0px;
+  margin-top:20px;
+  font-family: 'Carisma-Light';
+font-style: normal;
+font-size: 18px;
+
+}
+
+
+.nombre-socio {
+  background: #000;
+  color: #fff;
+  float:left;
+  height:20%;
+  width:100%;
+  padding-top: 20px;
+
+}
+
+.imagen-socio {
+height: 80%;
+float: left;
+width: 100%;
+overflow: hidden;
+background: transparent;
+}
+
+
 
 
 
