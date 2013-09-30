@@ -554,6 +554,32 @@ background: transparent;
 }
 
 
+.imagen-revista {
+    height: 160px;
+    overflow: hidden;
+}
+
+.imagen-revista img {
+  margin: 10px 0px 10px 10px;
+}
+
+.titulo-revista {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-family: 'Voltaire';
+  font-style: normal;
+  font-size: 18px;
+  padding:10px;
+  line-height: 24px;
+}
+
+.caja-revista {
+  padding-bottom: 0px;
+  background: #fff;
+}
+
+
 
 
 
