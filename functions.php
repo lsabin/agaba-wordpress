@@ -220,6 +220,15 @@ function add_script_gallery_start() {
   );
 }
 
+
+function add_script_fancybox_start() {
+    wp_enqueue_script(
+      'fancybox-start', // name your script so that you can attach other scripts and de-register, etc.
+      get_template_directory_uri() . '/js/fancybox-start.js', // this is the location of your script file
+      array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
 /*add_action( 'wp_enqueue_scripts', 'add_script_sharre' );
 add_action( 'wp_enqueue_scripts', 'add_script_menu' );
 add_action( 'wp_enqueue_scripts', 'add_script_social' );

@@ -580,6 +580,115 @@ background: transparent;
 }
 
 
+.cuadro-honor {
+  font-family: 'Carisma-Light';
+  font-style: normal;
+  margin-top: 40px;
+  margin-left: 80px;
+  padding-bottom: 60px;
+}
+
+.cuadro-honor .fecha{
+   font-family: 'Lobster Two';
+   font-size: 24px;
+   text-align: left;
+   padding-bottom: 20px;
+}
+
+.fecha .lugar {
+  text-align: right;
+}
+
+
+.cuadro-honor ul {
+    list-style-type: none;  
+    margin: 0;
+     font-size: 32px;
+}
+
+.cuadro-honor .puesto, .cuadro-honor .nombre {
+  float:left;
+}
+
+.cuadro-honor .nombre {
+  width: 60%;
+  line-height: 60px;
+  text-align: left;
+  margin-left: 30px;
+  font-weight: bold;
+  
+}
+
+.cuadro-honor .puesto {
+  width: 80px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #e8e8e8;
+  font-family: 'Libre Baskerville';
+}
+
+
+
+.cuadro-honor .circulo {
+   width:60px;
+   height:60px;
+   overflow:hidden;
+   border-radius:38px;
+   border:2px solid #7f7969;
+   display:block;
+   backrground-size: 100% auto; 
+   margin: 0 auto;    
+   background: #26bd9e;
+}
+
+.cuadro-honor .finalista {
+  font-weight: bold;
+  font-size: 28px;
+  background: #333;
+}
+
+.cuadro-honor .circulo-finalista {
+   width:40px;
+   height:40px;
+   overflow:hidden;
+   border-radius:38px;
+   border:2px solid #7f7969;
+   display:block;
+   backrground-size: 100% auto; 
+   margin: 0 auto;    
+   background: #333;
+}
+
+
+.cuadro-honor li {
+  height:80px;
+  border-bottom: 1px solid #7f7969; 
+  margin-top: 20px;
+}
+
+
+.cuadro-honor .foto-participante {
+  width: 60px;
+  height: 60px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 4px;
+  float: right;
+   
+}
+
+
+.cuadro-honor .foto-participante .recorta {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+   
+}
+
+
+
 
 
 
