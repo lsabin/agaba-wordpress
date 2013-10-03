@@ -38,11 +38,12 @@
               </div>
               <div id="ddmenu" class="span9 menu">
                 <ul class="sf-menu" id="menu-nav">
-                    <li class=""><a href="/">AGABA</a>
+                    <li class=""><a href="">AGABA</a>
                           <ul>
                             <li><a href="<?php echo home_url( '/' ); ?>quienes-somos">Quienes somos</a></li>
                             <li><a href="<?php echo home_url( '/' ); ?>como-asociarse">Como asociarse</a></li>
                             <li><a href="<?php echo home_url( '/' ); ?>junta-directiva">Junta directiva</a></li>
+                            <li><a href="<?php echo home_url( '/' ); ?>socios-protectores">Socios protectores</a></li>
                           </ul>
                     </li>
 
@@ -51,9 +52,24 @@
                         <li><a href="<?php echo home_url( '/' ); ?>category/coctel">Recetas tradicionales</a></li>
                         <li><a href="<?php echo home_url( '/' ); ?>category/orujo">Recetas con orujo</a></li>
                       </ul>
+                    </li>
 
                     <li class=""><a href="#">NOTICIAS</a></li>
-                    <li class=""><a href="<?php echo home_url( '/' ); ?>cursos">CURSOS</a></li>
+                    
+                    <li class=""><a href="">EVENTOS</a>
+                        <ul>
+                            <li class=""><a href="<?php echo home_url( '/' ); ?>cursos">Cursos</a></li>
+                            <li class=""><a href="<?php echo home_url( '/' ); ?>campeonatos">Campeonatos</a></li>  
+                        </ul>
+                    </li>  
+
+                    <li class=""><a href="">REVISTAS</a>
+                        <ul>
+                            <li class=""><a href="<?php echo home_url( '/' ); ?>revista-grolos">Grolos</a></li>
+                        </ul>
+                    </li>                     
+
+
                     <li class=""><a href="<?php echo home_url( '/' ); ?>contacto">CONTACTO</a></li>
                 </ul>
             </div>

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('agaba'); ?>
 
 <div id="content" class="error-page">
  <h2><span>Area 404</span> <br /> Nonexistent Area</h2>

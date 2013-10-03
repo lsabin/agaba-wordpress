@@ -146,6 +146,10 @@
 add_script_social();
 add_script_sharre();
 
+
+ add_script_fancybox();
+  add_script_fancybox_start();
+
   get_footer();
 
 ?>
