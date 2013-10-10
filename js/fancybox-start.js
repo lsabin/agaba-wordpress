@@ -3,12 +3,13 @@ jQuery(function(){
 
 
     jQuery("a.bebida").fancybox({
-    'width'             : '75%',
-    'height'            : '75%',
     'autoScale'         : false,
     'transitionIn'      : 'none',
     'transitionOut'     : 'none',
-    'type'              : 'iframe'
+    'type'              : 'iframe',
+    'width'             : '70%',
+    'height'            : '70%',
+    'fitToView'         : false, 
     });    
 
 });

@@ -687,8 +687,48 @@ background: transparent;
    
 }
 
+.indice {
+  text-align: center;
+  padding: 20px;
+  font-style: normal;
+  font-family: 'Carisma-Light';
+}
+
+.indice a {
+  padding:5px;
+  background: #bfb8a6;
+  border:1px solid #333;
+  color: #3F5A65;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.indice a:hover {
+  color: #bfb8a6;
+  background: #3F5A65;
+}
 
 
+.bebidas {
+  font-family: 'Carisma-Light';
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 20px;
+  border-bottom: 1px solid #bfb8a6;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+
+
+}
+
+.bebidas .nombre {
+  font-weight: bold;
+  font-size: 24px;
+  color: #3F5A65;
+}
 
 
 

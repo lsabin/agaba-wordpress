@@ -28,9 +28,11 @@
 
           <div class="row">
               <div class="span6">
+                <?php if (get('imagen')) { ?>
                     <div class="foto">
                     <img src="<?php echo get('imagen'); ?>" />
                     </div>
+                <?php } ?>    
               </div>
 
 

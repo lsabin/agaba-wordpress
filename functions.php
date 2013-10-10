@@ -234,4 +234,26 @@ add_action( 'wp_enqueue_scripts', 'add_script_menu' );
 add_action( 'wp_enqueue_scripts', 'add_script_social' );
 */
 
+
+add_action('template_redirect', 'inheritParentTemplate');
+ 
+function inheritParentTemplate() {
+    if (is_category()) {
+        $catid = get_query_var('cat'); //current category id
+        $category = get_category($catid);
+        $parent = $category->category_parent; //immediate parent
+        if ($parent){
+            $parentCategory = get_category($parent);
+            if("stores"==$parentCategory->name){
+                if ( file_exists(TEMPLATEPATH . '/category-' . $parentCategory->slug . '.php') ) {
+                    include (TEMPLATEPATH . '/category-' . $parentCategory->slug . '.php');
+                }
+                return true;
+            }
+        }
+    }
+}
+
+
+
 ?>

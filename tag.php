@@ -2,7 +2,8 @@
 
     get_header('agaba');
 
-    $args = array_merge( $wp_query->query_vars, array( 'post_type' => 'coctel' ) );
+    $args = array_merge( $wp_query->query_vars, 
+        array( 'post_type' => 'coctel', 'orderby' => 'name', 'order' => 'ASC' ) );
     $my_query = new WP_Query($args);
  
 
