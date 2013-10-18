@@ -2,9 +2,21 @@
 
     get_header('agaba');
 
-    $args = array_merge( $wp_query->query_vars, 
-        array( 'post_type' => 'coctel', 'orderby' => 'name', 'order' => 'ASC' ) );
-    $my_query = new WP_Query($args);
+    $args =  array( 'posts_per_page' => 50, 
+      'paged' => $paged,
+      'post_type' => 'coctel',
+      'orderby' => 'name', 
+      'order' => 'ASC'); 
+
+    $final_args = array_merge($wp_query->query_vars, $args);
+
+    $wp_query = new WP_Query($final_args);  
+
+
+
+    /*$args = array_merge( $wp_query->query_vars, 
+            array( 'post_type' => 'coctel', 'orderby' => 'name', 'order' => 'ASC', 'posts_per_page' => 20 ) );
+    $my_query = new WP_Query($args);*/
  
 
 ?>	
@@ -18,7 +30,7 @@
 
 <?php 
 
-while ($my_query->have_posts()) : $my_query->the_post(); ?>
+while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 <?php
 $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quality 90
@@ -36,6 +48,12 @@ $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quali
 
 
 </div></div></div>
+
+
+<?php if(function_exists('wp_paginate')) {
+    wp_paginate();
+} ?>
+
 
 
 <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">

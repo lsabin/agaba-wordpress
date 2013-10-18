@@ -16,16 +16,16 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/style-black.css" />
 
 </head>
-<body>
+<body class="bebidas-iframe">
 
 
 <div class="container">
-    <div class="row bebidas">
-        <div class="span3 nombre">
+    <div class="row bebidas-iframe">
+        <div class="span2 nombre">
           <?php the_title(); ?>
         </div>
 
-        <div class="span8">
+        <div class="span8 offset0">
           <?php the_content(); ?>
         </div>
 

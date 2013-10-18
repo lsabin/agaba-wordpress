@@ -26,38 +26,37 @@
 
 <div class="caja">
 
-
     <div class="row">
         <div class="span12 titular"><h1>ABC de bebidas</h1></div>  
     </div>
 
     <div class="row">
         <div class="span12 indice">
-          <a href="a">A</a>
-          <a href="b">B</a>
-          <a href="c">C</a>
-          <a href="d">D</a>
-          <a href="e">E</a>
-          <a href="e">F</a>
-          <a href="e">G</a>
-          <a href="e">H</a>
-          <a href="e">I</a>
-          <a href="e">J</a>
-          <a href="e">K</a>
-          <a href="e">L</a>
-          <a href="e">M</a>
-          <a href="e">N</a>
-          <a href="e">O</a>
-          <a href="e">P</a>
-          <a href="e">Q</a>
-          <a href="e">R</a>
-          <a href="e">S</a>
-          <a href="e">T</a>
-          <a href="e">U</a>
-          <a href="e">V</a>
-          <a href="e">W</a>
-          <a href="e">Y</a>
-          <a href="e">Z</a>
+          <a href="../a">A</a>
+          <a href="../b">B</a>
+          <a href="../c">C</a>
+          <a href="../d">D</a>
+          <a href="">E</a>
+          <a href="../f">F</a>
+          <a href="../g">G</a>
+          <a href="../h">H</a>
+          <a href="">I</a>
+          <a href="../j">J</a>
+          <a href="../k">K</a>
+          <a href="">L</a>
+          <a href="../m">M</a>
+          <a href="">N</a>
+          <a href="../o">O</a>
+          <a href="../p">P</a>
+          <a href="../q">Q</a>
+          <a href="../r">R</a>
+          <a href="../s">S</a>
+          <a href="../t">T</a>
+          <a href="../u">U</a>
+          <a href="../v">V</a>
+          <a href="../w">W</a>
+          <a href="../y">Y</a>
+          <a href="../z">Z</a>
 
         </div>  
     </div>

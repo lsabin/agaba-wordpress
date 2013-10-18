@@ -51,6 +51,7 @@
                       <ul>
                         <li><a href="<?php echo home_url( '/' ); ?>category/coctel">Recetas tradicionales</a></li>
                         <li><a href="<?php echo home_url( '/' ); ?>category/orujo">Recetas con orujo</a></li>
+                        <li><a href="<?php echo home_url( '/' ); ?>category/bebidas">ABC de bebidas</a></li>
                       </ul>
                     </li>
 
