@@ -32,7 +32,11 @@
                     <div class="foto">
                     <img src="<?php echo get('imagen'); ?>" />
                     </div>
-                <?php } ?>    
+                <?php } else {?>    
+                    <div class="foto">
+                    <img src="<?php bloginfo( 'template_url' ); ?>/images/icono-cocktail.jpg">
+                    </div>                
+                <?php } ?>
               </div>
 
 

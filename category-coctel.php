@@ -38,7 +38,14 @@ $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quali
 
 <a href="<?php the_permalink() ?>" rel="bookmark">
         <div class="span3 caja">
-          <div class="crop"><img src="<?php echo get('imagen'); ?>" /></div>
+          <div class="crop">
+            <?php if (get('imagen')) { ?>
+            <img src="<?php echo get('imagen'); ?>" />
+            <?php } else { ?>
+              <img src="<?php bloginfo( 'template_url' ); ?>/images/icono-cocktail.jpg" />
+            <?php } ?>
+
+          </div>
           <h3><?php the_title(); ?></h3>
         </div>
 </a>        
