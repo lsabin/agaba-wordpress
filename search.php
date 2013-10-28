@@ -19,7 +19,21 @@ while (have_posts()) : the_post(); ?>
 
 <a href="<?php the_permalink() ?>" rel="bookmark">
         <div class="span3 caja">
-          <div class="crop"><img src="<?php echo get('imagen'); ?>" /></div>
+
+ <?php if ( in_category('19') ) { ?>
+           <div class="ribbon-wrapper-green"><div class="ribbon-green">ORUJO</div></div>
+ <?php } elseif (in_category('6') && !in_category('19')) { ?>
+           <div class="ribbon-wrapper-green"><div class="ribbon-blue">CLÁSICO</div></div>
+ <?php } ?>
+
+          <div class="crop">
+            <?php if (get('imagen')) { ?>
+              <img src="<?php echo get('imagen'); ?>" />
+            <?php } else { ?>
+              <img src="<?php bloginfo( 'template_url' ); ?>/images/icono-cocktail.jpg" />
+            <?php } ?>
+
+          </div>
           <h3><?php the_title(); ?></h3>
         </div>
 </a>        

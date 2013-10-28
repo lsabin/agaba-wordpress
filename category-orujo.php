@@ -3,8 +3,24 @@
     get_header('agaba');
 
     $args = array_merge( $wp_query->query_vars, 
-      array( 'post_type' => 'coctel', 'orderby' => 'name', 'order' => 'ASC' ) );
-    $my_query = new WP_Query($args);
+      array(
+        'posts_per_page' => 20, 
+        'paged' => $paged, 
+        'post_type' => 'coctel', 
+        'orderby' => 'name', 
+        'order' => 'ASC' ) 
+      );
+
+
+    /*$args =  array( 'posts_per_page' => 20, 
+      'paged' => $paged,
+      'post_type' => 'coctel',
+      'orderby' => 'name', 
+      'category_name' => 'orujo',
+      'order' => 'ASC', 
+      ); */
+
+    $wp_query = new WP_Query($args);
  
 
 ?>	
@@ -18,7 +34,7 @@
 
 <?php 
 
-while ($my_query->have_posts()) : $my_query->the_post(); ?>
+while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 <?php
 $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quality 90
@@ -42,6 +58,12 @@ $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quali
 
 
 </div></div></div>
+
+
+
+<?php if(function_exists('wp_paginate')) {
+    wp_paginate(array(title => ''));
+} ?>
 
 
 <!--<?php get_search_form( 'true' ); ?>-->

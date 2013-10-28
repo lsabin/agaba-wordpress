@@ -38,7 +38,10 @@ $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quali
 
 <a href="<?php the_permalink() ?>" rel="bookmark">
         <div class="span3 caja">
+
+          <div class="ribbon-wrapper-green"><div class="ribbon-green">CLÁSICO</div></div>
           <div class="crop">
+
             <?php if (get('imagen')) { ?>
             <img src="<?php echo get('imagen'); ?>" />
             <?php } else { ?>

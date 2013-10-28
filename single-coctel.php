@@ -34,7 +34,7 @@
                     </div>
                 <?php } else {?>    
                     <div class="foto">
-                    <img src="<?php bloginfo( 'template_url' ); ?>/images/icono-cocktail.jpg">
+                    <img src="<?php bloginfo( 'template_url' ); ?>/images/icono-cocktail.jpg" />
                     </div>                
                 <?php } ?>
               </div>
