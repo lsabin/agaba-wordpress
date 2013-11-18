@@ -78,7 +78,7 @@
 
                   <div class="row" style="margin-top:20px;">
                     <div class="span4"><strong>Etiquetas</strong></div>
-                    <div class="span4"><?php the_tags(' '); ?></div>
+                    <div class="span4 etiquetas"><?php the_tags('', ' ', ''); ?></div>
                   </div>  
 
               </div>

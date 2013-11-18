@@ -68,26 +68,43 @@ $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quali
 
 <!--<?php get_search_form( 'true' ); ?>-->
 
+<div class="row">
+    <div class="span12 form-busqueda">
+      <form class="form-inline" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+       <!-- <label class="screen-reader-text" for="appendedInputButton">Busca en nuestras recetas de cócteles</label> -->
 
-<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-    <div><label class="screen-reader-text" for="s">Busca por:</label>
-        <input type="text" value="" name="s" id="s" />
-        <input type="submit" id="searchsubmit" value="Busca" />
+      <div class="input-append">
+        <input class="span6" id="appendedInputButton" name="s" type="text">
+        <button class="btn btn-infro" type="submit">Busca</button>
+      </div>
+
+              <!--<input type="submit" id="searchsubmit" value="Busca" />-->
+      </form>
+
+   </div>
+</div>
+
+<div class="row">
+    <div class="span12 caja tag-cloud">
+
+        <?php
+        $args = array( "title" => " " , 'post_type' => 'coctel',
+          'color' => 'span',
+          'color_span_from' => '#862d49',
+          'color_span_to' => '#8e392f',
+          'hover_underline' => 'no',
+          'order' => 'random',
+          'size_from' => '18px',
+          'size_to' => '32px' 
+           );
+
+        do_utcw( $args );
+        ?>
+
     </div>
-</form>
+  
+</div>
 
-
-<?php
-$args = array( "title" => "Etiquetas de cócteles" , 'post_type' => 'coctel',
-  'color' => 'span',
-  'color_span_from' => '#862d49',
-  'color_span_to' => '#8e392f',
-  'hover_underline' => 'no',
-  'order' => 'random' 
-   );
-
-do_utcw( $args );
-?>
 
 
 <?php

@@ -114,7 +114,7 @@ h1 {
     /*margin-left:0;*/
     margin-bottom: 20px;
     padding:0;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 
     text-align: center;
 
@@ -160,25 +160,55 @@ h1 {
   font-family: 'Lobster Two';
   font-style: italic;
   color:#333;
-  font-size: 20px;
+  font-size: 19px;
 }
+
+.caja a {
+  text-decoration: none;
+}
+
 
 .crop { width: 210px; height: 150px; overflow: hidden; }
 .crop img { width: 200px; height: 150px; margin: 10px 0 10px 10px; }
 
+
+.etiquetas a {
+    background: none repeat scroll 0 0 #0088CC;
+    color: #FFFFFF;
+    font-family: 'Voltaire';
+    font-style: normal;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.etiquetas a:hover {
+    background: none repeat scroll 0 0 #fff;
+    color: #0088cc;
+}
+
+
 .caja-coctel-aleatorio {
-  margin: 0;
+  margin-top: 0;
 
 }
 
 .tag-cloud {
 
   margin: 0;
-  margin-top:20px;
+  margin-left: 15px;
   background: #F6F6F6;
   padding-top:5px;
   padding-bottom: 5px;
+  font-family: 'Voltaire';
+  font-size:24px;
+  font-style: normal;
 }
+
+.tag-cloud a:hover {
+  background: #0088CC;
+
+}
+
 
 .titular {
     padding-top:10px;
@@ -591,9 +621,10 @@ background: transparent;
 
 .cuadro-honor .fecha{
    font-family: 'Lobster Two';
-   font-size: 24px;
-   text-align: left;
+   font-size: 28px;
+   text-align: center;
    padding-bottom: 20px;
+   padding-top: 20px;
 }
 
 .fecha .lugar {
@@ -604,7 +635,7 @@ background: transparent;
 .cuadro-honor ul {
     list-style-type: none;  
     margin: 0;
-     font-size: 32px;
+     font-size: 30px;
 }
 
 .cuadro-honor .puesto, .cuadro-honor .nombre {
@@ -664,8 +695,12 @@ background: transparent;
 
 .cuadro-honor li {
   height:80px;
-  border-bottom: 1px solid #7f7969; 
+  border-bottom: 1px solid #D0D5CB; 
   margin-top: 20px;
+}
+
+.cuadro-honor li.ultimo {
+  border: 0;
 }
 
 
@@ -687,6 +722,31 @@ background: transparent;
   overflow: hidden;
    
 }
+
+
+.cuadro-honor .mencion {
+  width: 30%;
+  line-height: 60px;
+  text-align: left;
+  margin-left: 0px;
+  font-weight: bold;
+  font-size: 26px;
+  float: left;
+
+  
+}
+
+.cuadro-honor .nombre-mencion {
+  width: 65%;
+  line-height: 60px;
+  text-align: right;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 28px;
+  float: right;
+  
+}
+
 
 .indice {
   text-align: center;
@@ -848,5 +908,76 @@ background: transparent;
   -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
   box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
 
+
+}
+
+
+
+.ribbon-orange {
+
+  font: bold 10px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #ff6600;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff6600), to(#ff8844)); 
+  background-image: -webkit-linear-gradient(top, #ff6600, #ff8844); 
+  background-image:    -moz-linear-gradient(top, #ff6600, #ff8844); 
+  background-image:     -ms-linear-gradient(top, #ff6600, #ff8844); 
+  background-image:      -o-linear-gradient(top, #ff6600, #ff8844); 
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+
+
+}
+
+
+.resultado {
+
+  border: 1px solid #7F7969;
+
+}
+
+.resultado .cuadro {
+  padding:10px;
+}
+
+.resultado h2 {
+  background: #80a3b2;
+  margin: 0;
+  padding: 10px;
+  color:#fff;
+}
+
+
+.campeonato .fecha{
+   font-family: 'Lobster Two';
+   font-size: 28px;
+   text-align: center;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+
+.campeonato img {
+  border: 1px solid #D0D5CB;
+  padding: 5px;
+  background: #fff;
+}
+
+
+.form-busqueda {
+  margin-left: 15px;
+  margin-top: 15px;
 
 }

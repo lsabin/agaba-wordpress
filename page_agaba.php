@@ -38,14 +38,27 @@ Template Name: Page inicial agaba
 
 <div class="row">
 
-  <div class="span4 seccion">
+  <div class="span8 seccion">
     <h2>COCTELES</h2>
+  </div>
+
+  <div class="span4 seccion">
+    <h2>NOTICIAS</h2>
+  </div>
+
+</div>
+
+
 
 
 
 <?php
 
-    $args = array( 'post_type' => 'coctel' , 'orderby' => 'rand', 'posts_per_page' => '1');
+    $args = array( 
+      'post_type' => 'coctel' ,
+       'orderby' => 'rand', 
+       'posts_per_page' => '1', 
+       'category__not_in' => array(19,104) );
     $my_query = new WP_Query($args);
  
 
@@ -56,33 +69,70 @@ Template Name: Page inicial agaba
 
 while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
+<div class="row">
+
+
 <?php
 $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quality 90
 ?>
 
-<a href="<?php the_permalink() ?>" rel="bookmark">
+
         <div class="span3 caja caja-coctel-aleatorio">
-          <div class="crop"><img src="<?php echo get('imagen'); ?>" /></div>
-          <h3><?php the_title(); ?></h3>
+          <a href="<?php the_permalink() ?>" rel="bookmark">          
+            <div class="crop">
+                <?php if (get('imagen')) { ?>
+                  <img src="<?php echo get('imagen'); ?>" />
+                <?php } else { ?>
+                  <img src="<?php bloginfo( 'template_url' ); ?>/images/icono-cocktail.jpg" />
+                <?php } ?>
+            </div>
+            <h3><?php the_title(); ?></h3>
+          </a>
         </div>
 
-        <div class="span3 caja tag-cloud">
+        <div class="span5">
+          <div class="row">
+            <div class="span5 caja tag-cloud">
 
 
-            <?php
-            $args = array( "title" => " " , 'post_type' => 'coctel',
-              'color' => 'span',
-              'color_span_from' => '#862d49',
-              'color_span_to' => '#8e392f',
-              'hover_underline' => 'no',
-              'order' => 'random' 
-               );
+                <?php
+                $args = array( "title" => " " , 'post_type' => 'coctel',
+                  'color' => 'span',
+                  'color_span_from' => '#862d49',
+                  'color_span_to' => '#8e392f',
+                  'hover_underline' => 'no',
+                  'order' => 'random',
+                  'size_from' => '18px',
+                  'size_to' => '32px' 
+                   );
 
-            do_utcw( $args );
-            ?>
+                do_utcw( $args );
+                ?>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="span5 form-busqueda">
+              <form class="form-inline" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+               <!-- <label class="screen-reader-text" for="appendedInputButton">Busca en nuestras recetas de cócteles</label> -->
+
+              <div class="input-append">
+                <input class="span4" id="appendedInputButton" name="s" type="text">
+                <button class="btn btn-infro" type="submit">Busca</button>
+              </div>
+
+                      <!--<input type="submit" id="searchsubmit" value="Busca" />-->
+              </form>
+
+           </div>
+            
+          </div>
 
         </div>
-</a>        
+
+
 
 
 <?php endwhile; ?>
@@ -92,26 +142,11 @@ $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quali
 
 
     
-  </div>   <!-- fin seccion coctel --> 
-
-
-  <div class="span4 seccion">
-    <h2>NOTICIAS</h2>
-    <p>bla bla bla</p>
-    <p>bla bla bla</p>
-    <p>bla bla bla</p>
-    <p>bla bla bla</p>
+  <div class="span4">
+    <p>Una noticia</p>
+    <p>Otra noticia</p>
 
   </div>  
-
-
-  <div class="span4 seccion">
-    <h2>CURSOS</h2>
-    <p><b>15/12/2013</b> Curso básico en Parador de Santiago</p>
-    <p><b>15/12/2013</b> Curso avanzado en Parador de Santiago</p>
-    
-  </div>  
-
 
  
 
