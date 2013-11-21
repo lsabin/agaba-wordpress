@@ -981,3 +981,34 @@ background: transparent;
   margin-top: 15px;
 
 }
+
+
+.caja-cargo {
+    height:150px;
+    background: #26BD9E;
+    font-family: 'Carisma-Light', sans-serif;
+    font-style: normal;
+    box-shadow: 5px 5px 2px #333333;
+}
+
+.caja-cargo  .nombre {
+    height: 70%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    line-height: 500%;
+}
+
+.caja-cargo .cargo {
+    background: #000;
+    height: 30%;
+    color: #fff;
+    line-height: 250%;
+    font-size: 14px;
+}
+
+.fila-junta {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+

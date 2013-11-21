@@ -95,7 +95,8 @@ $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quali
           'hover_underline' => 'no',
           'order' => 'random',
           'size_from' => '18px',
-          'size_to' => '32px' 
+          'size_to' => '32px',
+          'max' => '60'
            );
 
         do_utcw( $args );
