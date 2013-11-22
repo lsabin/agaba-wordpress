@@ -1012,3 +1012,92 @@ background: transparent;
     margin-top: 40px;
 }
 
+
+h1.postTitle {
+  /*background: #3F5A65;*/
+  padding:5px 5px 5px 0px;
+  font-size: 32px;
+  border-bottom: 1px solid #532222;
+}
+
+.postTitle a {
+  text-decoration: none;
+  color: #532222;
+}
+
+
+.postTitle .date {
+  font-family: 'Voltaire';
+  color: #333;
+  float:right;
+  font-size: .5em;
+}
+
+.post {
+  padding-top:10px;
+
+}
+
+.caja-post {
+  margin-top: 30px;
+  font-family: 'Carisma-Light';
+  font-style: normal;
+  font-size: 20px;
+  color: #333;
+  text-align: left;
+  min-height: 300px;
+}
+
+
+
+.aligncenter, img.aligncenter { 
+  clear: both; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+.seccion-noticias {
+  font-size: 1em;
+  font-family: 'Carisma-Light';
+
+}
+
+.seccion-noticias .noticia {
+  padding:3px 0px 0px 0px;
+  /*border-bottom: 1px solid #532222;*/
+  float:left;
+  width: 100%;
+}
+
+.noticia .titulo {
+  text-decoration: none;
+  color: #532222;
+  padding-left: 4px;
+  float:right;
+  margin-top: -1px;
+
+}
+
+.noticia .titulo a {
+  text-decoration: none;
+  color: #532222;
+}
+
+.noticia .titulo a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #0088CC;
+
+}
+
+
+.seccion-noticias .date {
+  font-family: 'Voltaire';
+  color: #333;
+  float:left;
+  font-size: .8em;
+}

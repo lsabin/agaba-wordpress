@@ -137,16 +137,36 @@ $image_attributes = "w=150&h=100&zc=c&q=90"; // 250x150px, crop to center, quali
 
 <?php endwhile; ?>
 
+  <!-- noticias -->
+  <div class="span4 seccion-noticias">
+<?php
+
+    $args = array(
+        'posts_per_page' => 5, 
+        'post_type' => 'Post', 
+        'orderby' => 'date', 
+        'order' => 'DESC' ); 
+
+    $my_query = new WP_Query($args);
+ 
+
+?>  
+  
+
+<?php 
+
+while ($my_query->have_posts()) : $my_query->the_post(); ?>
+   
+      <div class="noticia">
+        <div class="date"><?php echo get_the_date(); ?></div>  
+        <div class="titulo">
+          <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+        </div>
+      </div>
 
 
-
-
-    
-  <div class="span4">
-    <p>Una noticia</p>
-    <p>Otra noticia</p>
-
-  </div>  
+<?php endwhile; ?>    
+  </div>  <!-- fin noticias -->
 
  
 
