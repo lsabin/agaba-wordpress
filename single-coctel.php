@@ -40,21 +40,21 @@
               </div>
 
 
-              <div class="span4 info ">
-                  <div class="row"><div class="span4 linea"><strong>Tipo:</strong> <?php echo get('tipo'); ?></div></div>
-                  <div class="row"><div class="span4 linea"><strong>Preparación:</strong> <?php echo get('preparacion'); ?></div></div>
-                  <div class="row"><div class="span4 linea"><strong>Presentación: </strong><?php echo get('presentacion'); ?></div></div>
+              <div class="span5 info ">
+                  <div class="row"><div class="span5 linea"><strong>Tipo:</strong> <?php echo get('tipo'); ?></div></div>
+                  <div class="row"><div class="span5 linea"><strong>Preparación:</strong> <?php echo get('preparacion'); ?></div></div>
+                  <div class="row"><div class="span5 linea"><strong>Presentación: </strong><?php echo get('presentacion'); ?></div></div>
 
                   <?php if (get('autor')) { ?>
-                    <div class="row"><div class="span4 linea"><strong>Autor: </strong> <?php echo get('autor'); ?></div></div>
+                    <div class="row"><div class="span5 linea"><strong>Autor: </strong> <?php echo get('autor'); ?></div></div>
                   <?php } ?> 
 
 
                   <?php if (get('premios')) { ?>
-                    <div class="row"><div class="span4 linea"><strong>Premios: </strong> <?php echo get('premios'); ?></div></div>
+                    <div class="row"><div class="span5 linea"><strong>Premios: </strong> <?php echo get('premios'); ?></div></div>
                   <?php } ?>
 
-                  <div class="row"><div class="span4"></div></div>
+                  <div class="row"><div class="span5"></div></div>
 
 <!--
                   <div class="row social-buttons" style="margin-top:20px;">
@@ -66,7 +66,7 @@
 -->                  
 
                   <div class="row social-buttons" style="margin-top:20px;">
-                    <div class="span4">
+                    <div class="span5">
 
                       <div id="facebook" data-url="<?php the_permalink() ?>" data-title="Share on Facebook"></div>
                       <div id="twitter" data-url="<?php the_permalink() ?>" data-text="AGABA - <?php the_title(); ?>" data-title="Share on Twitter"></div>
@@ -77,8 +77,8 @@
 
 
                   <div class="row" style="margin-top:20px;">
-                    <div class="span4"><strong>Etiquetas</strong></div>
-                    <div class="span4 etiquetas"><?php the_tags('', ' ', ''); ?></div>
+                    <div class="span5"><strong>Etiquetas</strong></div>
+                    <div class="span5 etiquetas"><?php the_tags('', ' ', ''); ?></div>
                   </div>  
 
               </div>
