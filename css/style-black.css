@@ -270,8 +270,9 @@ h1 {
 
 
   width:27px;
-  height:48px;
-  border:1px solid #7f7969;
+  /* los siguientes atributos son para mostrar el contaje  */
+  /*height:48px;
+  border:1px solid #7f7969;*/ 
 }
 
 #twitter.sharrre a,
