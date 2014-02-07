@@ -49,6 +49,10 @@ h1 {
 	height:150px;
 	background-color: #333;
   margin-top:50px;
+  width: 100%;
+/*  position: absolute;
+  left: 0;
+  bottom: 0;*/
 }
 
 
@@ -1103,3 +1107,9 @@ h1.postTitle {
   float:left;
   font-size: .8em;
 }
+
+
+#holder {
+    min-height: 100%;
+    position: relative;
+  }
