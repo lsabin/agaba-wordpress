@@ -55,16 +55,8 @@
                   <?php } ?>
 
                   <div class="row"><div class="span5"></div></div>
-
-<!--
-                  <div class="row social-buttons" style="margin-top:20px;">
-                    <div class="span4">
-                          <img src="<?php bloginfo('template_url'); ?>/images/twitter.png" style="background-color:tranparent;border:0"/>
-                          <img src="<?php bloginfo('template_url'); ?>/images/facebook.png" style="background-color:transparent;border:0"/>
-                    </div>
-                  </div>
--->                  
-
+               
+                  <!--  
                   <div class="row social-buttons" style="margin-top:20px;">
                     <div class="span5">
 
@@ -73,7 +65,8 @@
                       <div id="pinterest" data-text="AGABA - <?php the_title(); ?>" data-url="<?php the_permalink() ?>" data-image="<?php echo get('imagen'); ?>"  data-title="Pinterest"></div>
 
                     </div>
-                  </div>                  
+                  </div>   
+                  -->              
 
 
                   <div class="row" style="margin-top:20px;">

@@ -102,7 +102,7 @@ require_once ( get_template_directory() . '/inc/theme-options.php' );
 function add_script_sharre() {
     wp_enqueue_script(
       'sharre', // name your script so that you can attach other scripts and de-register, etc.
-      get_template_directory_uri() . '/js/jquery.sharrre-1.3.4.js', // this is the location of your script file
+      get_template_directory_uri() . '/js/jquery.sharrre-1.3.5.js', // this is the location of your script file
       array('jquery') // this array lists the scripts upon which your script depends
   );
 }
